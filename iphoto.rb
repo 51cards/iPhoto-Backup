@@ -56,7 +56,7 @@ count = 0
 
 set.each do |item|
   destfile = "#{destination}/#{item.fname}"
-  unless File.exists?("#{destination}/#{item.fname}")
+  unless File.exists?(destfile)
     begin
       print "copying #{item.fname}... "
       FileUtils.cp(item.path, destfile)
