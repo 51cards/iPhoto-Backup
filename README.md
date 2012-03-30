@@ -13,3 +13,8 @@ This will scan the album data file, sort the photos by date, newest first, then 
     $ruby iphoto.rb /Volumes/Backup
 
 This script was written with exactly one user in mind; that is why it has no other options.
+
+---
+
+ - I have tested this on exactly one iPhoto library: mine. It works for me, but YMMV.
+ - The number in front of the files is the "DateAsTimerInterval" value from the album data file. I don't know how to convert it to a "real" date, but sorting by it does sort chronologically, so it's good enough for the purposes of this script.
