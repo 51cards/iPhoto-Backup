@@ -46,8 +46,8 @@ library = File.open(libraryfile, "r").read
 
 set = SortedSet.new()
 
-library.scan(media).each do |path|
-  set.add(Image.new(path[0], path[1]))
+library.scan(media).each do |record|
+  set.add(Image.new(record[0], record[1]))
 end
 
 puts "library scanned, %i files found" % set.length
